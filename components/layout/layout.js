@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../../styles/utils.module.css';
 import Link from 'next/link';
+import Header from '../header/header';
 
 const name = 'cami aguado';
 export const siteTitle = 'cami aguado';
@@ -10,6 +11,7 @@ export const siteTitle = 'cami aguado';
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <Header />
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
