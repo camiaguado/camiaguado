@@ -1,24 +1,30 @@
 import style from './header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import utilStyles from '../../styles/utils.module.css';
+
 
 export default function header() {
 
     return(
         <header className={style.header}>
-            <div className='max-width-container'>
-                <h2>
-                <Link href='/'>Cami Aguado</Link>
-                </h2>
-                <ul>
-                <li>
-                    <Link href='/about'>About</Link>
-                </li>
-                <li>
-                    <Link href='https://github.com/camiaguado'>
-                    GitHub
-                    </Link>
-                </li>
-                </ul>
+            <div className='max-width-container'>      
+                
+                <nav>
+                    <div>
+                        <a href="/"><h1 className={utilStyles.headingMd}>camiaguado</h1></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href='/animacion'>Asi me divierto</a>
+                        </li>
+                        <li>
+                            <a href='https://github.com/camiaguado'>
+                            GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
     )
