@@ -22,21 +22,15 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <AboutMe/>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-
-      <h1 className="text-3xl font-light underline">
-      Hello world!
-
-    </h1>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({id, date, title})=> (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <a href={`/posts/${id}`} className="text-blue-600 visited:text-red-600">
                 <a>{title}</a>
-              </Link> 
+              </a> 
               <br/>
               <small className={utilStyles.lightText}>
                 <Date dateString={date}/>
@@ -45,12 +39,7 @@ export default function Home({allPostsData}) {
           ))}
         </ul>
       </section>
-    
-    <Lamp></Lamp>
-    <Lamp></Lamp>
-    <Lamp></Lamp>
-    <Lamp></Lamp>
-    <Lamp></Lamp>
+
     </Layout>
   );
 }
