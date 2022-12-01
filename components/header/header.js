@@ -6,7 +6,7 @@ const navigation = [
   { name: 'Articulos', href: '#' },
   { name: 'Libros', href: '#' },
   { name: 'Entretenimiento', href: '/animations' },
-  { name: 'Proyectos', href: '#' },
+  { name: 'Proyectos', href: '/projects' }
 ]
 
 export default function Header() {
