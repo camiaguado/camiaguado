@@ -11,6 +11,7 @@ const projectsList = [
 export default function Projects() {
   return (
     <Layout>
+       <div className="space-y-6">  
         {projectsList.map((item) => (
     <div className="overflow-hidden bg-white shadow sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">
@@ -37,6 +38,7 @@ export default function Projects() {
       </div>
     </div>
     ))}
+    </div>
     </Layout>
   )
 }
