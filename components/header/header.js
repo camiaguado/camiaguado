@@ -3,10 +3,11 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Articulos', href: '#' },
-  { name: 'Libros', href: '#' },
+  { name: 'Articulos', href: '/articles' },
+  { name: 'Libros', href: '/books' },
   { name: 'Entretenimiento', href: '/animations' },
-  { name: 'Proyectos', href: '#' },
+  { name: 'BLABLA', href: '/ejemplo' },
+  { name: 'Proyectos', href: '/projects' },
 ]
 
 export default function Header() {
@@ -66,14 +67,6 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
-            </div>
-            <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
-              <a
-                href="#"
-                className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-              >
-                Log in
-              </a>
             </div>
           </nav>
           <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
