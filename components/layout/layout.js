@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Header />
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Fav.ico" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
