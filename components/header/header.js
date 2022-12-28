@@ -6,7 +6,6 @@ const navigation = [
   { name: 'Articulos', href: '/articles' },
   { name: 'Libros', href: '/books' },
   { name: 'Entretenimiento', href: '/animations' },
-  { name: 'BLABLA', href: '/ejemplo' },
   { name: 'Proyectos', href: '/projects' },
 ]
 
@@ -19,7 +18,7 @@ export default function Header() {
         
           <nav className="flex h-9 items-center justify-between" aria-label="Global">
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-              <a href="/" className="text-primary underlined block whitespace-nowrap text-2xl font-medium transition focus:outline-none">
+              <a href="/" className="text-primary block whitespace-nowrap text-2xl font-medium transition hover:underline underline-offset-8	decoration-blue-800 decoration-2">
                 <h1 className="text-blue-800">Cami Aguado</h1>
               </a>
             </div>
@@ -35,7 +34,7 @@ export default function Header() {
             </div>
             <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="font-semibold text-gray-900 hover:text-gray-900">
+                <a key={item.name} href={item.href} className="font-semibold text-gray-900 hover:underline underline-offset-8	decoration-blue-800 decoration-2 hover:text-blue-800">
                   {item.name}
                 </a>
               ))}
