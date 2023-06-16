@@ -8,7 +8,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 
 //Esto es para importar en servicios:
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { PresentationChartLineIcon, RocketLaunchIcon, HandThumbUpIcon, Cog8ToothIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 
 export async function getStaticProps() {
@@ -82,25 +82,25 @@ export default function Home({allPostsData}) {
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <RocketLaunchIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
                     <strong className="font-semibold text-gray-900">Transformación digital.</strong> Entendiendo las necesidades de tu empresa, identificaré oportunidades de mejora ayudándote a implementar tecnologías innovadoras que impulsen tu negocio.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <PresentationChartLineIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
                     <strong className="font-semibold text-gray-900">Estrategia tecnológica.</strong> Trabajaremos juntos para desarrollar una estrategia personalizada que se alinee con tus objetivos comerciales y te permita aprovechar al máximo las oportunidades tecnológicas.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <HandThumbUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
                     <strong className="font-semibold text-gray-900">Calidad de software.</strong> Estableceré procesos de desarrollo de calidad, asegurando eficiencia y mejorando la calidad de tus productos. Además, te proporcionaré herramientas y enfoques para una mejora continua.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <Cog8ToothIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
                     <strong className="font-semibold text-gray-900">Automatización de procesos.</strong> Te ayudaré a identificar áreas de automatización, implementar soluciones y optimizar tus equipos para lograr una mayor eficiencia y productividad.
                   </span>
