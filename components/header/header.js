@@ -19,7 +19,7 @@ export default function Header() {
           <nav className="flex h-9 items-center justify-between" aria-label="Global">
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="/" className="text-primary block whitespace-nowrap text-2xl font-medium transition hover:underline underline-offset-8	decoration-blue-800 decoration-2">
-                <h1 className="text-blue-900">Cami Aguado</h1>
+                <h1 className="text-blue-900">Camila Aguado</h1>
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -45,7 +45,7 @@ export default function Header() {
               <div className="flex h-9 items-center justify-between">
                 <div className="flex">
                   <a href="#" className="-m-1.5 p-1.5">
-                    <span className="sr-only">Cami Aguado</span>
+                    <span className="sr-only">Camila Aguado</span>
                     <img
                       className="h-8"
                       src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"

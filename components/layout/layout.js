@@ -6,8 +6,8 @@ import Link from 'next/link';
 import Header from '../header/header';
 import AboutMe from '../aboutMe/aboutMe'
 
-const name = 'cami aguado';
-export const siteTitle = 'cami aguado';
+const name = 'Camila Aguado';
+export const siteTitle = 'Camila Aguado';
 
 export default function Layout({ children, home }) {
   return (
@@ -16,8 +16,8 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/Fav.ico" />
         <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
+          name="Consultoría tecnológica"
+          content="Consultoría tecnológica a medida"
         />
         <meta
           property="og:image"
