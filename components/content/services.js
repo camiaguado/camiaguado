@@ -33,7 +33,7 @@ export default function Services() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
+              <p className="text-base font-semibold leading-7 text-teal-700">Deploy faster</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
                 Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
@@ -60,7 +60,7 @@ export default function Services() {
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-teal-700" aria-hidden="true" />
                   <span>
                     <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
                     consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
@@ -68,14 +68,14 @@ export default function Services() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-teal-700" aria-hidden="true" />
                   <span>
                     <strong className="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua
                     ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <ServerIcon className="mt-1 h-5 w-5 flex-none text-teal-700" aria-hidden="true" />
                   <span>
                     <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
                     vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.

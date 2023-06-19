@@ -11,6 +11,9 @@ import { getSortedPostsData } from '../lib/posts';
 import { PresentationChartLineIcon, RocketLaunchIcon, HandThumbUpIcon, Cog8ToothIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 
+import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+
+
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
@@ -27,6 +30,10 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
 {/** ESTO ES EL INICIO DE SERVICIOS https://tailwindui.com/components/marketing/sections/content-sections */}
+
+
+
+    {/** ESTO ES EL FIN DE SS Y EL INCIIO DE SS */}
 
 <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -59,60 +66,75 @@ export default function Home({allPostsData}) {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Digitalización</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Mis servicios</h1>
+              <p className="text-base font-semibold leading-7 text-teal-600">CTO fraccional</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Transforma tu idea en un MVP exitoso</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-              Transforma tu empresa con consultoría tecnológica especializada
+              Te acompaño en la creación de un roadmap estratégico, formación de equipo y elección de tecnologías adecuadas. Juntos, haremos realidad tu visión emprendedora.¡Hagamos realidad tu idea de manera eficiente y efectiva!
               </p>
             </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            className="w-[47rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[47rem]"
+            src="/images/routemap.png"
             alt=""
           />
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p>
-              Mi objetivo es ayudarte a dar un salto hacia el éxito digital y convertir los desafíos tecnológicos en oportunidades emocionantes. Trabajaré contigo de manera cercana y amigable, brindándote metodologías y herramientas que impulsarán la transformación de tu negocio.
-              </p>
+            
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <RocketLaunchIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <RocketLaunchIcon className="mt-1 h-5 w-5 flex-none text-teal-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Transformación digital.</strong> Entendiendo las necesidades de tu empresa, identificaré oportunidades de mejora ayudándote a implementar tecnologías innovadoras que impulsen tu negocio.
+                    <strong className="font-semibold text-gray-900">Estrategia</strong><br></br>
+                    Estrategia y visión tecnológica para tu empresa.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <PresentationChartLineIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <PresentationChartLineIcon className="mt-1 h-5 w-5 flex-none text-teal-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Estrategia tecnológica.</strong> Trabajaremos juntos para desarrollar una estrategia personalizada que se alinee con tus objetivos comerciales y te permita aprovechar al máximo las oportunidades tecnológicas.
+                    <strong className="font-semibold text-gray-900">Plan de acción</strong> <br></br>
+                    Identificación de problemas y plan de acción para impulsar el progreso.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <HandThumbUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <HandThumbUpIcon className="mt-1 h-5 w-5 flex-none text-teal-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Calidad de software.</strong> Estableceré procesos de desarrollo de calidad, asegurando eficiencia y mejorando la calidad de tus productos. Además, te proporcionaré herramientas y enfoques para una mejora continua.
+                    <strong className="font-semibold text-gray-900">Routemap</strong> <br></br>
+                    Hojas de ruta claras para llevar tu tecnología al siguiente nivel.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <Cog8ToothIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <Cog8ToothIcon className="mt-1 h-5 w-5 flex-none text-teal-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Automatización de procesos.</strong> Te ayudaré a identificar áreas de automatización, implementar soluciones y optimizar tus equipos para lograr una mayor eficiencia y productividad.
+                    <strong className="font-semibold text-gray-900">Implementación</strong><br></br>
+                    Colaboración con tu equipo actual para implementar la estrategia.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <Cog8ToothIcon className="mt-1 h-5 w-5 flex-none text-teal-600" aria-hidden="true" />
+                  <span>
+                    <strong className="font-semibold text-gray-900">Calidad</strong><br></br>
+                  Enfoque en seguridad, escalabilidad y crecimiento sostenible.
                   </span>
                 </li>
               </ul>
               <p className="mt-8">
               Contacta conmigo ahora y comencemos a transformar tu empresa. ¡Aprovecha al máximo las oportunidades del mundo digital y destaca en el mercado actual!
               </p>
-              <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Transforma tu idea en un MVP exitoso.</h2>
-              <p className="mt-6">
-              Te acompaño en la creación de un roadmap estratégico, formación de equipo y elección de tecnologías adecuadas. Juntos, haremos realidad tu visión emprendedora.¡Hagamos realidad tu idea de manera eficiente y efectiva!
-              </p>
+              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 mt-8">
+              Comencemos.{' '}
+              <a href="#" className="font-semibold text-teal-600">
+                <span className="absolute inset-0" aria-hidden="true" />
+                Agendar una llamada <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+              
             </div>
           </div>
         </div>

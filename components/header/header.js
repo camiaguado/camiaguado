@@ -18,8 +18,8 @@ export default function Header() {
         
           <nav className="flex h-9 items-center justify-between" aria-label="Global">
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-              <a href="/" className="text-primary block whitespace-nowrap text-2xl font-medium transition hover:underline underline-offset-8	decoration-blue-800 decoration-2">
-                <h1 className="text-blue-900">Camila Aguado</h1>
+              <a href="/" className="text-primary block whitespace-nowrap text-2xl font-medium transition hover:underline underline-offset-8	decoration-teal-600 decoration-2">
+                <h1 className="text-teal-600">Camila Aguado</h1>
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -34,7 +34,7 @@ export default function Header() {
             </div>
             <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="font-semibold text-gray-900 hover:underline underline-offset-8	decoration-blue-800 decoration-2 hover:text-blue-800">
+                <a key={item.name} href={item.href} className="font-semibold text-gray-900 hover:underline underline-offset-8	decoration-teal-600 decoration-2 hover:text-teal-600">
                   {item.name}
                 </a>
               ))}
