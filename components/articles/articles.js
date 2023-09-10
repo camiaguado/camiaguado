@@ -30,7 +30,7 @@ export default function Blog({allPostsData}) {
               </p>
             </div>
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-              {allPostsData.map(({id, date, title, category}) => (
+              {allPostsData.map(({id, date, title, category, photo, description}) => (
                 <article key={id} className="flex max-w-xl flex-col items-start justify-between">
                   <div className="flex items-center gap-x-4 text-xs">
                     <time dateTime={date} className="text-gray-500">
@@ -50,10 +50,10 @@ export default function Blog({allPostsData}) {
                         {title}
                       </a>
                     </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">¡Impulsa el éxito de tu empresa en la era digital! Transformación digital y automatización de procesos a tu medida. Aprovecha al máximo las oportunidades del mundo digital y destaca en el mercado actual. ¡Contacta ahora y comencemos juntos el camino hacia el triunfo empresarial!</p>
+                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">description</p>
                   </div>
                   <div className="relative mt-2 flex items-center gap-x-4">
-                    <img src='/images/profile.jpg' alt=""/>
+                    <img src={photo} alt=""/>
                   </div>
                 </article>
               ))}

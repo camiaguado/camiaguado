@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.4",
-    "@heroicons/react": "^2.0.13",
+    "@heroicons/react": "^2.0.18",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
@@ -26,5 +26,4 @@
     "path": false,
     "os": false
   }
-
 }

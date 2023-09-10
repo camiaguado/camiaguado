@@ -1,76 +1,56 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import TabsComponent from '../TabsComponent/TabsComponent'
+import { InboxIcon, LinkIcon } from '@heroicons/react/20/solid'
 
-import { PresentationChartLineIcon, RocketLaunchIcon, HandThumbUpIcon, Cog8ToothIcon, ServerIcon } from '@heroicons/react/20/solid'
-
-export default function AboutMe() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  const features = [
-    {
-      name: 'Transformación digital',
-      description:
-        'Entendiendo las necesidades de tu empresa, identificaré oportunidades de mejora ayudándote a implementar tecnologías innovadoras que impulsen tu negocio.',
-      icon: RocketLaunchIcon,
-    },
-    {
-      name: 'Estrategia tecnológica',
-      description:
-        'Trabajaremos juntos para desarrollar una estrategia personalizada que se alinee con tus objetivos comerciales y te permita aprovechar al máximo las oportunidades tecnológicas.',
-      icon: PresentationChartLineIcon,
-    },
-    {
-      name: 'Calidad de software',
-      description:
-        'Estableceré procesos de desarrollo de calidad, asegurando eficiencia y mejorando la calidad de tus productos. Además, te proporcionaré herramientas y enfoques para una mejora continua.',
-      icon: HandThumbUpIcon,
-    },
-    {
-      name: 'Automatización de procesos',
-      description:
-        'Te ayudaré a identificar áreas de automatización, implementar soluciones y optimizar tus equipos para lograr una mayor eficiencia y productividad.',
-      icon: Cog8ToothIcon,
-    },
-  ]
-
+export default function Portfolio() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-    <div className="mx-auto max-w-7xl px-6 lg:px-8">
-    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Consultoría tecnológica.{' '}
-            <a href="#" className="font-semibold text-teal-600">
+    <div className="min-h-screen bg-white flex flex-col justify-center items-center py-8 sm:py-24 md:py-32">
+      <div className="max-w-4xl w-full shadow-lg p-4 sm:p-8 rounded-lg flex flex-col sm:flex-row justify-between mb-8 sm:mb-16">
+
+        {/* Tu información e imagen */}
+        <div className="flex flex-col sm:space-x-8 sm:flex-row items-center space-y-5 sm:space-y-0">
+          {/* Imagen redonda */}
+          <div className="mb-5 sm:mb-0">
+            <img src="/images/cami.png" alt="Camila Aguado" className="rounded-full border-teal-600 border-2 w-32 h-32 sm:w-40 sm:h-40"/>
+          </div>
+
+          <div className="flex flex-col justify-center space-y-5">
+            <h1 className="text-2xl sm:text-3xl text-teal-600 font-semibold">Camila Aguado</h1>
+            <p className="text-gray-600">Ingeniera informática</p>
+            <p className="text-teal-600">Especialista en transformación digital</p>
+
+            <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-3 space-y-2 sm:space-y-0">
+              <a href="mailto:camila@blumb.ai" className="text-gray-500 flex items-center space-x-2 hover:underline">
+                <InboxIcon className="h-5 w-5" aria-hidden="true" />
+                <span>camila@blumb.ai</span>
+              </a>
+              <a href="https://linkedin.com/in/camilaaguado" className="text-gray-500 flex items-center space-x-2 hover:underline">
+                <LinkIcon className="h-5 w-5" aria-hidden="true"/>
+                <span>Linkedin</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-3xl w-full text-center my-4 sm:my-8">
+        <p className="text-gray-700 leading-relaxed border-l-4 border-teal-600 pl-4">
+          Durante más de una década, como Ingeniera de Software especializada en automatización, he liderado y desarrollado productos tecnológicos de calidad. Pero más allá de la tecnología, me apasiona conectar con las personas, entender sus necesidades y ayudarlas a descubrir y aprovechar su potencial tecnológico.
+        </p>
+
+        <div className="flex justify-center mt-4 sm:mt-6">
+          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 mt-4 sm:mt-8">
+            ¿Crees que podría ayudarte?{' '}
+            <a href="https://calendly.com/camila-2fe/introductory-call" className="font-semibold text-teal-600">
               <span className="absolute inset-0" aria-hidden="true" />
-              Agendar una llamada <span aria-hidden="true">&rarr;</span>
+              Agenda una llamada <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
-      <div className="mx-auto max-w-2xl lg:text-center">
-        <p className="mt-2 text-3xl font-bold tracking-tight text-teal-600 sm:text-4xl">
-        Impulsa tu empresa con consultoría tecnológica especializada
-        </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-        Mi objetivo es ayudarte a dar un salto hacia el éxito digital y convertir los desafíos tecnológicos en oportunidades emocionantes, brindando metodologías y herramientas que impulsarán la transformación de tu negocio.
-        </p>
       </div>
-      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-          {features.map((feature) => (
-            <div key={feature.name} className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-gray-900">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600">
-                  <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
-                </div>
-                {feature.name}
-              </dt>
-              <dd className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
+
+      <TabsComponent></TabsComponent>
     </div>
-  </div>
   )
 }

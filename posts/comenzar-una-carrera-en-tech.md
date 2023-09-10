@@ -2,6 +2,7 @@
 title: 'Comenzar una carrera en tech'
 date: '2020-01-01'
 category: 'Tecnología'
+photo: '/images/casitaBurgos.jpeg'
 ---
 
 Esto es una guía para que puedas iniciarte en el mundo de la tecnología y puedas desarrollar tu carrera entendiendo de que se trata, de los diferentes roles que hay dentro de los equipos y de las diferentes maneras de trabajar en equipos tecnológicos.

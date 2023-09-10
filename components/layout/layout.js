@@ -5,6 +5,7 @@ import utilStyles from '../../styles/utils.module.css';
 import Link from 'next/link';
 import Header from '../header/header';
 import AboutMe from '../aboutMe/aboutMe'
+import TabsComponent from '../TabsComponent/TabsComponent';
 
 const name = 'Camila Aguado';
 export const siteTitle = 'Camila Aguado';
@@ -12,7 +13,6 @@ export const siteTitle = 'Camila Aguado';
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Header />
       <Head>
         <link rel="icon" href="/Fav.ico" />
         <meta
@@ -31,7 +31,9 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           
+            <>
             <AboutMe></AboutMe>
+            </>
         
         ) : (
           <div className="py-10">
