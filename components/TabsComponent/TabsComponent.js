@@ -18,11 +18,11 @@ export default function TabsComponent() {
         onClick={() => setActiveTab('asesoria')}>
         Asesoría
       </button>
-      <button 
+      {/* <button 
         className={`py-2 px-6 ${activeTab === 'proyectos' ? 'border-b-2 border-teal-600' : ''}`}
         onClick={() => setActiveTab('proyectos')}>
         Proyectos
-      </button>
+      </button> */}
     </div>
 
       {/* Contenido de las pestañas */}
