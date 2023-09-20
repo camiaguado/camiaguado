@@ -18,11 +18,11 @@ export default function TabsComponent() {
         onClick={() => setActiveTab('asesoria')}>
         Asesoría
       </button>
-      {/* <button 
-        className={`py-2 px-6 ${activeTab === 'proyectos' ? 'border-b-2 border-teal-600' : ''}`}
-        onClick={() => setActiveTab('proyectos')}>
-        Proyectos
-      </button> */}
+      <button 
+        className={`py-2 px-6 ${activeTab === 'cto' ? 'border-b-2 border-teal-600' : ''}`}
+        onClick={() => setActiveTab('cto')}>
+        CTO Fraccional
+      </button>
     </div>
 
       {/* Contenido de las pestañas */}
@@ -166,12 +166,47 @@ export default function TabsComponent() {
     </div>
   </div>
 )}
-        {activeTab === 'proyectos' && (
-          <div>
-            <h2 className="text-2xl text-teal-600 mb-4">Proyectos</h2>
-            <p>Descripción de tus proyectos.</p>
+
+        {activeTab === 'cto' && (
+  <div>
+    <div className="mb-8">
+      <h3 className="text-xl text-teal-600 mb-4 border-b border-gray-300 pb-2">Servicios de CTO Fraccional</h3>
+      
+      <p>Como CTO Fraccional, mi objetivo es ser tu aliada estratégica en el viaje tecnológico de tu empresa. Con una combinación de experiencia, visión estratégica y enfoque práctico, me aseguraré que tu empresa aproveche al máximo la tecnología, impulsando el crecimiento y la innovación.</p>
+    </div>
+
+    <div className="mb-8">
+      <h3 className="text-xl text-teal-600 mb-4 border-b border-gray-300 pb-2">¿Qué ofrezco como CTO Fraccional?</h3>
+      
+      <ul className="list-disc pl-5">
+        <li className="mb-2"><strong>Visión estratégica tecnológica</strong> <br/> Evalúo el panorama tecnológico actual de tu empresa y trazo una hoja de ruta clara.</li>
+        <li className="mb-2"><strong>Innovación y digitalización</strong> <br/> Te guío en la adopción de las últimas tendencias y tecnologías.</li>
+        <li className="mb-2"><strong>Optimización de procesos</strong> <br/> Analizo y mejoro los procesos tecnológicos existentes.</li>
+        <li className="mb-2"><strong>Comunicación efectiva</strong> <br/>Traduzco conceptos tecnológicos complejos en términos comprensibles.</li>
+        <li className="mb-2"><strong>Seguridad y protección de datos</strong> <br/> Evalúo y fortalezco las medidas de seguridad.</li>
+        <li className="mb-2"><strong>Mentoría y formación</strong> <br/>Ayudo a tu equipo a desarrollar sus habilidades tecnológicas.</li>
+        <li className="mb-2"><strong>Identificación de oportunidades</strong> <br/> Identifico oportunidades para la innovación tecnológica.</li>
+        <li className="mb-2"><strong>Gestión de proyectos tecnológicos</strong> <br/>Superviso y gestiono proyectos tecnológicos.</li>
+      </ul>
+    </div>
+
+    <div className="mb-8">
+      <h3 className="text-xl text-teal-600 mb-4 border-b border-gray-300 pb-2">Conclusión</h3>
+      
+      <p>A través de este servicio, busco consolidar tu equipo tecnológico, fortaleciendo sus habilidades, procesos y herramientas. El objetivo es que, con un producto sólido y procesos de calidad, tu startup o empresa pueda florecer y escalar de manera eficiente y natural en el corto plazo.<br/>
+La meta es que, al finalizar mi colaboración, tu equipo esté completamente preparado para tomar las riendas, enfrentar nuevos desafíos y aprovechar oportunidades, todo ello sin depender de servicios externos. Busco construir una base sólida y proporcionar las herramientas y el conocimiento necesarios para que tu negocio prospere por sí solo.</p>
+<div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 mt-8">
+              {' '}
+              <a href="https://calendly.com/camila-2fe/introductory-call" className="font-semibold text-teal-600">
+                <span className="absolute inset-0" aria-hidden="true" />
+                Agendar una llamada <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
           </div>
-        )}
+    </div>
+  </div>
+)}
         {activeTab === 'empresas' && (
   <div>
     <div className="mb-8">
