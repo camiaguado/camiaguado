@@ -1,9 +1,16 @@
 ---
 title: 'Comenzar una carrera en tech'
 date: '2020-01-01'
-category: 'Tecnología'
+tags: 'Tecnología'
 photo: '/images/casitaBurgos.jpeg'
 ---
+
+---
+title: 'Descubre cómo un CTO fraccional puede ser el catalizador del éxito tecnológico de tu startup o negocio.'
+date: '2023-09-10'
+tags: ['Liderazgo', 'Project Managment']
+photo: '/images/puentelareina.jpeg'
+description: 'En el mundo empresarial actual, la tecnología juega un papel fundamental. Descubre cómo un CTO fraccional puede ser la pieza que tu negocio necesita para alcanzar el siguiente nivel.'
 
 Esto es una guía para que puedas iniciarte en el mundo de la tecnología y puedas desarrollar tu carrera entendiendo de que se trata, de los diferentes roles que hay dentro de los equipos y de las diferentes maneras de trabajar en equipos tecnológicos.
 
