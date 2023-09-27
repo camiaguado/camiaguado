@@ -45,7 +45,7 @@ export default function TabsComponent() {
 
       {/* Paso 1 */}
       <div className="mb-4">
-        <strong className='text-teal-600'>#1: Evaluación Inicial</strong><br />
+        <strong className='text-teal-600'>1. Evaluación Inicial</strong><br />
         <ul className="list-disc pl-5">
           <li className="mb-2"><strong>Objetivo: </strong>Entender el estado actual del negocio y sus necesidades.</li>
           <li className="mb-2"><strong>Acciones: </strong></li>
@@ -61,7 +61,7 @@ export default function TabsComponent() {
 
       {/* Paso 2 */}
       <div className="mb-4">
-        <strong className='text-teal-600'>#2: Auditoría y diagnóstico</strong><br />
+        <strong className='text-teal-600'>2. Auditoría y diagnóstico</strong><br />
         <ul className="list-disc pl-5">
           <li className="mb-2"><strong>Objetivo: </strong>Identificar áreas de mejora y oportunidades de digitalización.</li>
           <li className="mb-2"><strong>Acciones: </strong></li>
@@ -80,7 +80,7 @@ export default function TabsComponent() {
 
       {/* Paso 3 */}
       <div className="mb-4">
-        <strong className='text-teal-600'>#3: Definición de KPIs
+        <strong className='text-teal-600'>3. Definición de KPIs
 </strong><br />
         <ul className="list-disc pl-5">
           <li className="mb-2"><strong>Objetivo: </strong>Establecer métricas claras para medir el éxito de la transformación digital.</li>
@@ -98,7 +98,7 @@ export default function TabsComponent() {
 
 {/* Paso 4 */}
 <div className="mb-4">
-        <strong className='text-teal-600'>#4: Plan de automatización y uso de IA
+        <strong className='text-teal-600'>4. Plan de automatización y uso de IA
 </strong><br />
         <ul className="list-disc pl-5">
           <li className="mb-2"><strong>Objetivo: </strong>Proporcionar soluciones específicas para las áreas identificadas.</li>
@@ -122,7 +122,7 @@ export default function TabsComponent() {
       
       {/* Paso 5 */}
 <div className="mb-4">
-        <strong className='text-teal-600'>#5: Propuesta de implementación
+        <strong className='text-teal-600'>5. Propuesta de implementación
 </strong><br />
         <ul className="list-disc pl-5">
           <li className="mb-2"><strong>Objetivo: </strong>Presentar un plan de acción detallado a la empresa.</li>
