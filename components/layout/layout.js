@@ -45,7 +45,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className="text-blue-600 visited:purple m-16">
           <a href="/">
-            <a>← Back to home</a>
+            <a>← Volver</a>
           </a>
         </div>
       )}

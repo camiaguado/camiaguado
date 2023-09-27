@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.content-container {
+    max-width: 800px; /* o el ancho que prefieras */
+    margin: 0 auto;
+    padding: 0 20px; /* un poco de padding lateral */
+  }

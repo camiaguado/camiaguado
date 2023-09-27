@@ -8,11 +8,6 @@ export default function TabsComponent() {
     <div className="w-full max-w-4xl p-4 md:p-8 mt-4 md:mt-16 bg-white rounded-lg shadow-lg">
     {/* Pestañas */}
     <div className="mb-4 md:mb-8 flex flex-wrap md:flex-nowrap border-b">
-    <button 
-        className={`py-2 px-6 ${activeTab === 'empresas' ? 'border-b-2 border-teal-600' : ''}`}
-        onClick={() => setActiveTab('empresas')}>
-        Curriculum
-      </button>
       <button 
         className={`py-2 px-6 ${activeTab === 'asesoria' ? 'border-b-2 border-teal-600' : ''}`}
         onClick={() => setActiveTab('asesoria')}>
@@ -22,6 +17,11 @@ export default function TabsComponent() {
         className={`py-2 px-6 ${activeTab === 'cto' ? 'border-b-2 border-teal-600' : ''}`}
         onClick={() => setActiveTab('cto')}>
         CTO Fraccional
+      </button>
+      <button 
+        className={`py-2 px-6 ${activeTab === 'empresas' ? 'border-b-2 border-teal-600' : ''}`}
+        onClick={() => setActiveTab('empresas')}>
+        Trayectoria
       </button>
     </div>
 
@@ -157,7 +157,7 @@ export default function TabsComponent() {
       <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 mt-8">
               {' '}
-              <a href="https://calendly.com/camila-2fe/introductory-call" className="font-semibold text-teal-600">
+              <a href="https://calendar.app.google/X2Bgy111sEwdHEv16" className="font-semibold text-teal-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Agendar una llamada <span aria-hidden="true">&rarr;</span>
               </a>
@@ -198,7 +198,7 @@ La meta es que, al finalizar mi colaboración, tu equipo esté completamente pre
 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 mt-8">
               {' '}
-              <a href="https://calendly.com/camila-2fe/introductory-call" className="font-semibold text-teal-600">
+              <a href="https://calendar.app.google/X2Bgy111sEwdHEv16" className="font-semibold text-teal-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Agendar una llamada <span aria-hidden="true">&rarr;</span>
               </a>

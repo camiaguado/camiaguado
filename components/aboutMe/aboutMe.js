@@ -42,7 +42,7 @@ export default function Portfolio() {
         <div className="flex justify-center mt-4 sm:mt-6">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 mt-4 sm:mt-8">
             ¿Crees que podría ayudarte?{' '}
-            <a href="https://calendly.com/camila-2fe/introductory-call" className="font-semibold text-teal-600">
+            <a href="https://calendar.app.google/X2Bgy111sEwdHEv16" className="font-semibold text-teal-600">
               <span className="absolute inset-0" aria-hidden="true" />
               Agenda una llamada <span aria-hidden="true">&rarr;</span>
             </a>

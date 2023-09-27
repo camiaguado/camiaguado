@@ -1,0 +1,18 @@
+.postArticle {
+    line-height: 1.6;
+    font-size: 18px; /* o el tamaño que prefieras */
+  }
+  
+  .postArticle h1 {
+    margin-top: 24px;
+    font-size: 2.5em;
+  }
+  
+  .postArticle p {
+    margin-top: 16px;
+  }
+  
+  .postArticle img {
+    max-width: 100%;
+    height: auto;
+  }
